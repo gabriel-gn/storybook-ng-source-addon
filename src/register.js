@@ -1,12 +1,13 @@
+import React from "react";
 import { addons, types } from "@storybook/addons";
-
 import { AddonPanel } from "@storybook/components";
 import { StoryPanel } from "./StoryPanelBase";
+
 
 const ADDON_ID = "gabrielgn/source-loader";
 const PANEL_ID = `${ADDON_ID}/panel`;
 
-// Register the addon
+
 addons.register(ADDON_ID, (api) => {
   addons.add(PANEL_ID, {
     type: types.PANEL,
